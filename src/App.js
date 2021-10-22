@@ -103,7 +103,7 @@ function App() {
         />
       )}
       {isLoading && <Loader />}
-      {images.length > 0 && <Button loadMoreHandler={loadMoreHandler} />}
+      {images.length >= 11 && <Button loadMoreHandler={loadMoreHandler} />}
       {openModal && (
         <Modal largeImgURL={largeImgURL} onClose={closeModal}></Modal>
       )}
